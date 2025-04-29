@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    ---pink: #C93B76;
+    --pink-shadow: #c93b7685;
+    --primary-purple: #212936;
+    --second-purple: #5b3557;
+    --purple-shadow: #212936a9;
+    --dark-blue: #2A2F55;
+    --primary-dark-gray: #4D5562;
+    --second-dark-gray: #121826a6;
+    --light-gray: #E5E7EB;
+    --font-Inter: 'Inter', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    background-image: linear-gradient(45deg, var(--second-purple), var(--dark-blue));
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: var(--font-Inter);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--light-gray);
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--primary-dark-gray);
+}
+
+h1, p{
+    margin: 0;
+}
+
+section.container-music {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.music-player {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 30px;
+    background-color: var(--second-dark-gray);
+    border-radius: 18px;
+}
+
+@media(max-width: 720px){
+    div.music-player{
+        width: 75%;
+    }
+}
+
+div.wallpaper>img {
+    border-radius: 18px;
+    width: 100%;
+}
+
+div.wallpaper{
+    margin-bottom: 15px;
+}
+
+.text{
+    text-align: center;
+}
+
+div.text h1{
+    margin-bottom: 5px;
+}
+
+div.music-count{
+    margin-bottom: 30px;
+}
+
+.music-time{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+div.music-time > span{
+    font: 600 11px var(--font-Inter);
+    color: var(--primary-dark-gray);
+}
+
+div.music-bar, .progress{
+    display: block;
+    height: 5px;
+    border-radius: 15px;
+}
+div.music-bar{
+    position: relative;
+    width: 100%;    
+    background-color: white;
+}
+div.music-bar>.progress{
+    position: absolute;
+    background-color: var(---pink);
+    box-shadow: 0 0 10px var(--pink-shadow);
+    width: 50%;
+}
+
+div.players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+div.players>img{
+    width: 35px;
+    height: auto;
+}
+div.players>img:hover{
+    color: white;
+}
+
+
+div.start{
+    background-color: var(---pink);
+    padding: 7px 9px 3px;
+    border-radius: 100%;
+    box-shadow: 0px 0 10px var(--pink-shadow);
+}
+
+div.players > div.overlay{
+    background-color: none;
+    padding: 5px 8px 2px;
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+}
+div.players > div.overlay:hover{
+    background-color: var(--second-dark-gray);
+}
+
+.player-btn{
+    cursor: pointer;
+}

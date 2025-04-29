@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <section class="container-music">
+            <div class="music-player">
+                <div>
+                    <div class="wallpaper">
+                        <img src="../../assets/img/cover-1.jpg" alt="Wallpaper Space">
+                        <audio id="audio" src="../../assets/audio/forest-lullaby-110624.mp3"></audio>
+                    </div>
+                    <div class="text">
+                        <h1 id="music-title">Lost in the City Lights</h1>
+                        <p id="music-artist">Cosmo Sheldrake</p>
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="music-count">
+                        <div class="music-time">
+                            <span id="current-time">00:00</span>
+                            <span id="duration">00:00</span>
+                        </div>
+                        <div class="music-bar">
+                            <span class="progress"></span>
+                        </div>
+                    </div>
+                    <div class="players">
+                        <div class="overlay player-btn"><img id="prev-btn" src="../../assets/img/Stop_and_play_fill-1.svg" alt=""></div>
+                        <div class="start player-btn"><img id="play-btn"" src="../../assets/img/Play_fill.svg" alt="" onclick=""></div>
+                        <div class="overlay player-btn"><img id="next-id" src="../../assets/img/Stop_and_play_fill_reverse.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
